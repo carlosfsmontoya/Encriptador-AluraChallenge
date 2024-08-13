@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="images/alura.png" type="image/png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Alura Encriptador Challenge</title>
+</head>
+
+<body>
+    <header>
+        <img src="images/logo.png" alt="alura logo" />
+        <h1>Alura Challenge Encriptador</h1>
+    </header>
+
+    <main>
+        <div id="matrix-container"></div>
+        <section class="section-a">
+            <textarea class="text-area" cols="30" rows="10" placeholder="Ingrese el texto aquí"></textarea>
+
+            <div class="informacion">
+                <h6>Solo letras minúsculas y sin acentos*</h6>
+            </div>
+            <div class="botones">
+                <button type="button" class="btn-encriptar">Encriptar</button>
+                <button type="button" class="btn-desencriptar">Desencriptar</button>
+            </div>
+        </section>
+
+        <section class="section-b">
+            <label for="mensaje" class="hidden">Resultado</label>
+            <textarea id="mensaje" class="mensaje" cols="30" rows="10"></textarea>
+            <img class="ilu" src="images/Ilu.png" alt="Ilu" />
+
+            <button type="button" class="btn-copiar hidden">Copiar</button>
+            <div class="texto">
+                <h1>Ningún mensaje fue encontrado</h1>
+                <h6>
+                    <center>
+                        Ingresa el texto que desees encriptar o desencriptar.
+                    </center>
+                </h6>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <a href="https://github.com/saturnette">
+            <h1>/saturnette</h1>
+        </a>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
